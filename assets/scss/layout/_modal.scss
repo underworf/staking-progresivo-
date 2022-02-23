@@ -1,0 +1,56 @@
+/* ------------------------ MODAL ----------------------- */
+
+.modal-dialog {
+    max-width: min-content;
+    .modal-content {
+        width: 725px;
+        margin: 0 auto;
+        background: url(../img/bg_modal.png) no-repeat;
+        background-size: cover;
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        padding: 50px 0px;
+        .component-day,
+        .montos {
+            border-bottom: 1px solid $color-secundario;
+            padding: 40px 50px;
+        }
+        .modal-header-cal {
+            text-align: center;
+            border-bottom: 1px solid $color-secundario;
+            color: $color-secundario;
+        }
+        .modal-main-cal {
+            .cantidad {
+                .form-value {
+                    margin: 0 auto;
+                }
+                .component-day .day-mes {
+                    justify-content: center;
+                }
+            }
+            .montos {
+                @include f-center;
+                flex-direction: column;
+                gap: 20px;
+                .form-value {
+                    // margin: ;
+                }
+            }
+        }
+        .modal-footer-cal {
+            padding: 40px 50px;
+            text-align: center;
+            .component-mensual {
+                flex-wrap: wrap;
+                justify-content: center;
+                .meses {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

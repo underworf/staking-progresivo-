@@ -1,0 +1,165 @@
+/* ----------------------- MIXING ----------------------- */
+
+@mixin f-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------------------- VALUE CONTAINE ------------------- */
+
+.form-select,
+.form-value {
+    width: calc(50% - 20px);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 4px solid $color-secundario;
+    height: 54px;
+    background: #f2f2f1;
+    padding: .5rem .5rem .5rem 1rem;
+}
+
+
+/* -------------------- COMPONENT-DAY ------------------- */
+
+.component-day {
+    .day-mes {
+        display: flex;
+        .day-mes__title {
+            color: $color-secundario;
+            width: 10%;
+        }
+        &__items {
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+            span {
+                height: 25px;
+                padding: 0px 8px;
+                background: $color-secundario;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+/* ------------------------ component-rango----------------------- */
+
+.slider-range {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: $color-secundario;
+    gap: 10px;
+    .slider {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        .range {
+            width: 100%;
+            height: 10px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            -webkit-appearance: none;
+            outline: none;
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 30px;
+                height: 30px;
+                background: #2baae2;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                cursor: pointer;
+                outline: none;
+                box-shadow: 0 0 0 0 #2baae2;
+                transition: all 300ms;
+                -webkit-transition: all 300ms;
+                -moz-transition: all 300ms;
+                -ms-transition: all 300ms;
+                -o-transition: all 300ms;
+                &:hover {
+                    box-shadow: 0 0 0 10px #2babe225;
+                }
+            }
+        }
+    }
+    .prev,
+    .next {
+        font-size: 2rem;
+    }
+}
+
+
+/* ----------------- .COMPONENTE-MENSUA ----------------- */
+
+.component-mensual {
+    display: flex;
+    align-items: flex-end;
+    color: $color-secundario;
+    .meses {
+        width: 80%;
+        .mes-title {
+            font-size: 1.3rem;
+        }
+        .mes__items-container {
+            text-align: center;
+            align-items: flex-end;
+            justify-content: space-between;
+            .item-mes {
+                .item-mensual__value {
+                    padding: 2px 5px;
+                    border-radius: $borde-radius-medium;
+                    -webkit-border-radius: $borde-radius-medium;
+                    -moz-border-radius: $borde-radius-medium;
+                    -ms-border-radius: $borde-radius-medium;
+                    -o-border-radius: $borde-radius-medium;
+                    background: transparent;
+                    margin: 2px;
+                    border: 1px solid white;
+                    &.active {
+                        background: $color-btn;
+                        border: 1px solid $color-btn;
+                        color: $color-texo;
+                    }
+                }
+            }
+        }
+    }
+    .mensual-total {
+        width: 20%;
+        &__title {
+            font-size: 1.3rem;
+        }
+        button {
+            padding: 0px 20px 3px 20px;
+            border-radius: $borde-radius-medium;
+            -webkit-border-radius: $borde-radius-medium;
+            -moz-border-radius: $borde-radius-medium;
+            -ms-border-radius: $borde-radius-medium;
+            -o-border-radius: $borde-radius-medium;
+            margin: 2px;
+            background: $color-btn;
+            border: 1px solid $color-btn;
+            color: $color-texo;
+            font-weight: 500;
+            font-size: $text-font-2;
+        }
+    }
+}

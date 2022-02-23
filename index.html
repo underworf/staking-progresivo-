@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evulus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-evulus px-3" id="nav-evulus">
+            <a class="navbar-brand pl-md-5 ml-xl-5 " href="https://evulus.com"><img src="https://evulus.com/assets/img/logo-menu.png" alt="logo"></a>
+            <div class="navbar-evulus" id="navbar-evulus">
+                <ul class="pl-md-4 nav_principal d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link btn-2" href="">Calculadora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-2 active" href="#">Compra Evu</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id="nav-modificacion__menu" class="nav-modificacion__menu w-100 d-flex align-items-center justify-content-end">
+                <div class="logginSearch">
+
+                    <div class="buttons-loggin d-flex justify-content-center">
+                        <a href="https://evulus.com/login" class="btn-1">Accede</a>
+                        <a href="https://evulus.com/register" class="btn-2">Registrate</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="menu-burguer ">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="submenu">
+            </div>
+            <div class="aside-menu  p-3" id="aside-menu">
+
+                <div class="close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="items-submenu" id="items-submenu">
+
+                </div>
+                <a href="" class="btn-evulus-green"><i class="fas fa-trophy-alt"></i>Item 1</a>
+                <a href="" class="btn-evulus-green"><i class="fas fa-trophy-alt"></i>Item 1</a>
+                <a href="" class="btn-evulus-green"><i class="fas fa-trophy-alt"></i>Item 1</a>
+                <a href="" class="btn-evulus-green"><i class="fas fa-trophy-alt"></i>Item 1</a>
+                <a href="" class="btn-evulus-green"><i class="fas fa-trophy-alt"></i>Item 1</a>
+
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="staking-progresivo  ">
+            <div class="container">
+                <div class="title">
+                    <h1>Staking progresivo</h1>
+                    <span class="code">0x18b5f22266343ccd180c6285a66cc9a23dc262e9</span>
+                </div>
+
+                <div class="precios">
+                    <div class="apy container-btn-date">
+                        <div class="btn-date">
+                            <div class="precios__title">APY</div>
+                            <span>0%</span>
+                        </div>
+
+                    </div>
+                    <div class="tvl  container-btn-date">
+                        <div class="btn-date">
+                            <div class="precios__title">TVL</div>
+                            <span>$0</span>
+                        </div>
+                    </div>
+                    <div class="precio-evu  container-btn-date">
+                        <div class="btn-date">
+
+                            <div class="precios__title">Precio EVU</div>
+                            <span>0.66</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="panel">
+                    <div class="row">
+                        <div class="panel__cuenta d-flex">
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Selecionar cuenta</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            <input class="form-value" type="text" name="total" id="total-evu" value="Cantidad de Evu">
+                        </div>
+
+
+
+
+                        <div class="panel__day">
+
+                            <div class="component-day">
+                                <div class="day-mes">
+                                    <div class="day-mes__title">Días</div>
+                                    <div class="day-mes__items">
+                                        <span>1 Mes</span>
+                                        <span>3 Mes</span>
+                                        <span>6 Mes</span>
+                                        <span>12 Mes</span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="slider-range">
+                                    <div class="prev"><i class="fas fa-caret-left"></i></div>
+                                    <div class="value">100%</div>
+                                    <div class="slider">
+                                        <input class="range" type="range" min="0" max="100" value="40">
+                                    </div>
+                                    <div class="next"><i class="fas fa-caret-right"></i></div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+                        <div class="panel__mes">
+                            <div class="component-mensual">
+
+                                <div class="meses">
+                                    <div class="mes-title">% mensual</div>
+
+                                    <div class="mes__items-container d-flex">
+
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">1</div>
+                                            <div class="item-mensual__value active">5%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">2</div>
+                                            <div class="item-mensual__value active">8%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">3</div>
+                                            <div class="item-mensual__value active">12%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">4</div>
+                                            <div class="item-mensual__value active">16%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">5</div>
+                                            <div class="item-mensual__value">18%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">6</div>
+                                            <div class="item-mensual__value">20%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">7</div>
+                                            <div class="item-mensual__value">23%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">8</div>
+                                            <div class="item-mensual__value">27%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">9</div>
+                                            <div class="item-mensual__value">30%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">10</div>
+                                            <div class="item-mensual__value">33%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">11</div>
+                                            <div class="item-mensual__value">35%</div>
+                                        </div>
+                                        <div class="item-mes">
+                                            <div class="item-mensual__number">12</div>
+                                            <div class="item-mensual__value">40%</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mensual-total ">
+                                    <div class="mensual-total__title">% Total</div>
+
+                                    <button type="button">250%</button>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="panel__stake d-flex">
+                            <input class="btn-evulus-medium" type="button" value="stake">
+                            <input class="btn-evulus-medium" type="button" value="unstake">
+                            <input class="btn-evulus-medium" type="button" value="restake">
+                            <input class="btn-evulus-medium" type="button" value="claimreward">
+                        </div>
+
+
+
+
+                        <div class="panel__valance d-flex">
+                            <div class="valance-item">
+                                <div class="valance-item__title">Mi Stoke</div>
+                                <div class="valance-item__total">0</div>
+                            </div>
+                            <div class="valance-item">
+                                <div class="valance-item__title">Ganancia</div>
+                                <div class="valance-item__total">0,00</div>
+                                <span>Evulus Token(EVU)</span>
+                            </div>
+                            <div class="valance-item">
+                                <div class="valance-item__title">Mi Balance</div>
+                                <div class="valance-item__total">499000.00</div>
+                                <span>Evulus Token(EVU)</span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="panel__table">
+                            <table>
+                                <thead class="table-header">
+                                    <th class="col-4">Cuenta</th>
+                                    <th class="col-2">Cantidad</th>
+                                    <th class="col-2">Inicio</th>
+                                    <th class="col-2">Finaliza</th>
+                                    <th class="col-2">Bloquedos</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>5000.00</td>
+                                        <td>17/02/2020 <span>20:00 p.m</span></td>
+                                        <td>17/03/2022 <span>20:00 p.m</span></td>
+                                        <td>30 Dias</td>
+                                    </tr>
+
+                                </tbody>
+
+
+
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="footer">
+                    <button type="button" class="btn-submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Conectar Wallet</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+
+
+                                <div class="modal-header-cal">
+                                    <h2>Calcular Beneficio</h2>
+                                    <p>APY Actual 250%</p>
+                                </div>
+
+
+
+                                <div class="modal-main-cal">
+
+
+                                    <div class="cantidad">
+                                        <h5>Cantidad EVU</h5>
+                                        <div class="form-value">Monto EVU</div>
+
+                                        <div class="component-day">
+                                            <div class="day-mes">
+
+                                                <div class="day-mes__items">
+                                                    <span>1 Mes</span>
+                                                    <span>3 Mes</span>
+                                                    <span>6 Mes</span>
+                                                    <span>12 Mes</span>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="slider-range">
+
+                                                <div class="value">100%</div>
+                                                <div class="slider">
+                                                    <input class="range" type="range" min="0" max="100" value="40">
+                                                </div>
+                                                <div class="next"><i class="fas fa-caret-right"></i></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="montos">
+                                        <div class="form-value">Monto Diario</div>
+                                        <div class="form-value">Monto Mensual</div>
+                                        <div class="form-value">Monto Total</div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="modal-footer-cal">
+                                    <div class="component-mensual">
+
+                                        <div class="meses">
+                                            <div class="mes-title">% mensual</div>
+
+                                            <div class="mes__items-container d-flex">
+
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">1</div>
+                                                    <div class="item-mensual__value active">5%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">2</div>
+                                                    <div class="item-mensual__value active">8%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">3</div>
+                                                    <div class="item-mensual__value active">12%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">4</div>
+                                                    <div class="item-mensual__value active">16%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">5</div>
+                                                    <div class="item-mensual__value">18%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">6</div>
+                                                    <div class="item-mensual__value">20%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">7</div>
+                                                    <div class="item-mensual__value">23%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">8</div>
+                                                    <div class="item-mensual__value">27%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">9</div>
+                                                    <div class="item-mensual__value">30%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">10</div>
+                                                    <div class="item-mensual__value">33%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">11</div>
+                                                    <div class="item-mensual__value">35%</div>
+                                                </div>
+                                                <div class="item-mes">
+                                                    <div class="item-mensual__number">12</div>
+                                                    <div class="item-mensual__value">40%</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="mensual-total ">
+                                            <div class="mensual-total__title">% Total</div>
+
+                                            <button type="button">250%</button>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Conecte su billetera EVU a Evulus Staking</p>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script data-search-pseudo-elements defer src="https://pro.fontawesome.com/releases/v5.10.1/js/all.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>
