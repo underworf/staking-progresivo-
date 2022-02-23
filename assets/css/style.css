@@ -107,10 +107,12 @@ section {
   height: 54px;
   background: #f2f2f1;
   padding: 0rem 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 500;
+  color: #676767;
 }
 
 /* -------------------- COMPONENT-DAY ------------------- */
@@ -225,7 +227,7 @@ section {
   justify-content: space-between;
 }
 .component-mensual .meses .mes__items-container .item-mes .item-mensual__value {
-  padding: 2px 5px;
+  padding: 0px 5px 4px 5px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -322,7 +324,7 @@ section {
 
 .btn-evulus-small {
   width: auto;
-  padding: 0.5rem;
+  padding: 0rem 1rem 5px;
   margin: 0 auto;
   color: black;
   background: #ffbe1b;
@@ -376,9 +378,8 @@ section {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   display: inline-block;
-  color: #ffffff;
-  margin: 0;
-  border: 1px solid #08907a;
+  margin: 10px 15px;
+  border: 2px solid #008d78;
 }
 .btn-1:focus,
 .btn-2:focus {
@@ -396,43 +397,10 @@ section {
 }
 
 .btn-2 {
-  border: 1px solid #08907a;
-  color: #08907a;
-  background: transparent;
-}
-
-.btn-evulus-green {
-  width: 100%;
-  padding: 0px 0.5rem 5px;
-  margin: 0 auto;
+  border: 2px solid #08907a;
   color: black;
-  background: #ffffff;
-  transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -ms-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-align: center;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  display: inline-block;
-  white-space: nowrap;
-}
-.btn-evulus-green:focus {
-  border: none;
-}
-.btn-evulus-green:hover {
-  background: #08907a;
-  color: white;
-}
-.btn-evulus-green.active {
-  background: #08907a;
-  color: white;
+  background: transparent;
+  min-width: 112px;
 }
 
 .btn-submit {
@@ -631,7 +599,7 @@ main {
 }
 
 .staking-progresivo {
-  padding: 80px 0px;
+  padding: 100px 0px 80px 0px;
 }
 
 .title,
@@ -656,18 +624,18 @@ main {
 }
 
 .panel {
-  background: url(../img/bg-panel.png) no-repeat;
+  background: url(../img/bg-panel.png) no-repeat top;
   box-shadow: 0px 0px 40px 0px #02201b;
   background-size: cover;
   position: relative;
   padding: 3.5rem 2.5rem;
   margin: 0px auto 30px auto;
   max-width: 933px;
-  border-radius: 70px;
-  -webkit-border-radius: 70px;
-  -moz-border-radius: 70px;
-  -ms-border-radius: 70px;
-  -o-border-radius: 70px;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
   overflow: hidden;
   min-height: 940px;
 }

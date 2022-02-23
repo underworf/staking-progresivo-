@@ -21,10 +21,12 @@
     height: 54px;
     background: #f2f2f1;
     padding: 0rem .5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 500;
+    color: #676767;
 }
 
 
@@ -145,7 +147,7 @@
             justify-content: space-between;
             .item-mes {
                 .item-mensual__value {
-                    padding: 2px 5px;
+                    padding: 0px 5px 4px 5px;
                     border-radius: $borde-radius-medium;
                     -webkit-border-radius: $borde-radius-medium;
                     -moz-border-radius: $borde-radius-medium;
@@ -179,7 +181,7 @@
             border: 1px solid $color-btn;
             color: $color-texo;
             font-weight: 500;
-            font-size: $text-font-2;
+            font-size: $text-font-5;
         }
     }
 }
