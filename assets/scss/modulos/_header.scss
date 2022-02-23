@@ -6,4 +6,10 @@
             width: 100%;
         }
     }
+    .navbar-toggler {
+        border: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
 }
