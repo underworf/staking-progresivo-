@@ -3,7 +3,6 @@
 .modal-dialog {
     max-width: min-content;
     .modal-content {
-        width: 725px;
         margin: 0 auto;
         background: url(../img/bg_modal.png) no-repeat;
         background-size: cover;
@@ -12,21 +11,36 @@
         -moz-border-radius: 35px;
         -ms-border-radius: 35px;
         -o-border-radius: 35px;
-        padding: 50px 0px;
-        .component-day,
-        .montos {
+        padding: 20px 0px;
+        .modal-header-cal,
+        .cantidad,
+        .montos,
+        .modal-footer-cal {
             border-bottom: 1px solid $color-secundario;
-            padding: 40px 50px;
+            padding: 20px 50px;
         }
         .modal-header-cal {
             text-align: center;
-            border-bottom: 1px solid $color-secundario;
             color: $color-secundario;
+            h2 {
+                font-size: 3rem;
+            }
         }
         .modal-main-cal {
             .cantidad {
-                .form-value {
-                    margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                .cantidad-evu {
+                    h5 {
+                        color: $color-secundario;
+                    }
+                    .data-value {
+                        font-size: 1rem;
+                        margin: 0 auto;
+                        width: 180px;
+                        height: 44px;
+                    }
                 }
                 .component-day .day-mes {
                     justify-content: center;
@@ -36,19 +50,29 @@
                 @include f-center;
                 flex-direction: column;
                 gap: 20px;
-                .form-value {
-                    // margin: ;
+                .data-value {
+                    width: 80%;
                 }
             }
         }
         .modal-footer-cal {
-            padding: 40px 50px;
             text-align: center;
+            border-bottom: none;
             .component-mensual {
                 flex-wrap: wrap;
                 justify-content: center;
                 .meses {
                     width: 100%;
+                }
+                .mensual-total {
+                    button {
+                        width: 100%;
+                    }
+                }
+                .mes-title,
+                .mensual-total__title {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
                 }
             }
         }

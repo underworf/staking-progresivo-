@@ -15,7 +15,7 @@
 
 <body>
     <header class="header">
-        <nav class="nav-evulus px-3" id="nav-evulus">
+        <!-- <nav class="nav-evulus px-3" id="nav-evulus">
             <a class="navbar-brand pl-md-5 ml-xl-5 " href="https://evulus.com"><img src="https://evulus.com/assets/img/logo-menu.png" alt="logo"></a>
             <div class="navbar-evulus" id="navbar-evulus">
                 <ul class="pl-md-4 nav_principal d-flex align-items-center">
@@ -63,8 +63,36 @@
 
 
             </div>
-        </nav>
+        </nav> -->
 
+
+        <nav class="navbar navbar-expand-lg  fixed-top navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#"><img src="assets/icons/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn-2 active" aria-current="page" href="#">Calculadora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn-2" href="#"> Comprar Evu</a>
+                        </li>
+
+
+                    </ul>
+
+                    <div>
+                        <a href="#" class="btn-2">REQUISITOS</a>
+                        <a href="#" class="btn-2">Conectar Wallet</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -108,8 +136,11 @@
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
-                              </select>
-                            <input class="form-value" type="text" name="total" id="total-evu" value="Cantidad de Evu">
+                            </select>
+                            <div class="data-value">
+                                cantidad-evu
+                                <span class="value">$0.00</span>
+                            </div>
                         </div>
 
 
@@ -131,12 +162,12 @@
 
 
                                 <div class="slider-range">
-                                    <div class="prev"><i class="fas fa-caret-left"></i></div>
-                                    <div class="value">100%</div>
+                                    <div class="prev"></div>
+                                    <div class="porcentaje">100%</div>
                                     <div class="slider">
                                         <input class="range" type="range" min="0" max="100" value="40">
                                     </div>
-                                    <div class="next"><i class="fas fa-caret-right"></i></div>
+                                    <div class="next"></div>
                                 </div>
 
                             </div>
@@ -310,8 +341,14 @@
 
 
                                     <div class="cantidad">
-                                        <h5>Cantidad EVU</h5>
-                                        <div class="form-value">Monto EVU</div>
+                                        <div class="cantidad-evu">
+                                            <h5>Cantidad EVU</h5>
+                                            <div class="data-value">Monto EVU
+                                                <span class="value">$0.00</span>
+
+                                            </div>
+                                        </div>
+
 
                                         <div class="component-day">
                                             <div class="day-mes">
@@ -328,11 +365,11 @@
 
                                             <div class="slider-range">
 
-                                                <div class="value">100%</div>
+                                                <div class="porcentaje">100%</div>
                                                 <div class="slider">
                                                     <input class="range" type="range" min="0" max="100" value="40">
                                                 </div>
-                                                <div class="next"><i class="fas fa-caret-right"></i></div>
+                                                <div class="next"></div>
                                             </div>
 
                                         </div>
@@ -341,9 +378,10 @@
 
 
                                     <div class="montos">
-                                        <div class="form-value">Monto Diario</div>
-                                        <div class="form-value">Monto Mensual</div>
-                                        <div class="form-value">Monto Total</div>
+
+                                        <div class="data-value">Monto Diario <span class="value">$0.00</span></div>
+                                        <div class="data-value">Monto Mensual <span class="value">$0.00</span></div>
+                                        <div class="data-value">Monto Total <span class="value">$0.00</span></div>
 
                                     </div>
                                 </div>

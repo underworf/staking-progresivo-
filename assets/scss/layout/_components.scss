@@ -10,17 +10,21 @@
 /* ------------------- VALUE CONTAINE ------------------- */
 
 .form-select,
-.form-value {
+.data-value {
     width: calc(50% - 20px);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    border: 4px solid $color-secundario;
+    border: 7px solid $color-secundario;
     height: 54px;
     background: #f2f2f1;
-    padding: .5rem .5rem .5rem 1rem;
+    padding: 0rem .5rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -55,12 +59,32 @@
 
 /* ------------------------ component-rango----------------------- */
 
+.next {
+    width: 0;
+    height: 0;
+    border-left: 14px solid $color-secundario;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+.prev {
+    width: 0;
+    height: 0;
+    border-right: 15px solid $color-secundario;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
 .slider-range {
     border-radius: 5px;
     display: flex;
     align-items: center;
     color: $color-secundario;
     gap: 10px;
+    margin: 10px auto;
+    .porcentaje {
+        padding-bottom: 2px;
+    }
     .slider {
         width: 100%;
         display: flex;
@@ -68,7 +92,7 @@
         margin-right: 15px;
         .range {
             width: 100%;
-            height: 10px;
+            height: 5px;
             border-radius: 20px;
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
@@ -78,8 +102,8 @@
             outline: none;
             &::-webkit-slider-thumb {
                 -webkit-appearance: none;
-                width: 30px;
-                height: 30px;
+                width: 20px;
+                height: 20px;
                 background: #2baae2;
                 border-radius: 50%;
                 -webkit-border-radius: 50%;
@@ -95,14 +119,10 @@
                 -ms-transition: all 300ms;
                 -o-transition: all 300ms;
                 &:hover {
-                    box-shadow: 0 0 0 10px #2babe225;
+                    box-shadow: 0 0 0 7px #2babe225;
                 }
             }
         }
-    }
-    .prev,
-    .next {
-        font-size: 2rem;
     }
 }
 
@@ -113,6 +133,7 @@
     display: flex;
     align-items: flex-end;
     color: $color-secundario;
+    justify-content: space-between;
     .meses {
         width: 80%;
         .mes-title {
@@ -143,7 +164,6 @@
         }
     }
     .mensual-total {
-        width: 20%;
         &__title {
             font-size: 1.3rem;
         }
