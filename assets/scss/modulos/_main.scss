@@ -143,13 +143,21 @@ main {
             tbody {
                 td {
                     background: $color-secundario;
-                    font-size: .5rem;
+                    font-size: .7rem;
                     font-weight: 500;
                 }
             }
             td,
             th {
-                padding: 5px 0px 5px 20px;
+                padding: 5px 0px 5px 0px;
+            }
+            td:first-child,
+            th:first-child {
+                padding: 5px 20px 5px 20px;
+            }
+            th:last-child,
+            td:last-child {
+                padding: 5px 20px 5px 20px;
             }
         }
     }

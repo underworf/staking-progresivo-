@@ -93,16 +93,6 @@ section {
   margin: 0;
 }
 
-.navbar {
-  background: #ffffff;
-}
-.navbar .logo {
-  width: 160px;
-}
-.navbar .logo img {
-  width: 100%;
-}
-
 /* ----------------------- MIXING ----------------------- */
 /* ------------------- VALUE CONTAINE ------------------- */
 .form-select,
@@ -625,6 +615,16 @@ section {
   margin-bottom: 10px;
 }
 
+.navbar {
+  background: #ffffff;
+}
+.navbar .logo {
+  width: 160px;
+}
+.navbar .logo img {
+  width: 100%;
+}
+
 main {
   background: black;
   background: linear-gradient(180deg, black 0%, #056354 100%);
@@ -770,12 +770,20 @@ main {
 }
 .panel__table table tbody td {
   background: #ffffff;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: 500;
 }
 .panel__table table td,
 .panel__table table th {
-  padding: 5px 0px 5px 20px;
+  padding: 5px 0px 5px 0px;
+}
+.panel__table table td:first-child,
+.panel__table table th:first-child {
+  padding: 5px 20px 5px 20px;
+}
+.panel__table table th:last-child,
+.panel__table table td:last-child {
+  padding: 5px 20px 5px 20px;
 }
 
 .footer {
