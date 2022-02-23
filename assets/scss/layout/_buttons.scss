@@ -61,7 +61,7 @@
     .btn-1,
     .btn-2 {
         @include btn-personalizado($color-principal, 0rem .5rem 5px, auto, .9rem);
-        margin: 10px 15px;
+        margin: 10px 15px 10px 0px;
         border: 2px solid #008d78;
         &:hover {
             background: $color-principal;

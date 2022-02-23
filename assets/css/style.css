@@ -224,7 +224,7 @@ section {
 .component-mensual .meses .mes__items-container {
   text-align: center;
   align-items: flex-end;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .component-mensual .meses .mes__items-container .item-mes .item-mensual__value {
   padding: 0px 5px 4px 5px;
@@ -378,7 +378,7 @@ section {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   display: inline-block;
-  margin: 10px 15px;
+  margin: 10px 15px 10px 0px;
   border: 2px solid #008d78;
 }
 .btn-1:focus,
@@ -510,6 +510,7 @@ section {
 /* ------------------------ MODAL ----------------------- */
 .modal-dialog {
   max-width: min-content;
+  min-width: 650px;
 }
 .modal-dialog .modal-content {
   margin: 0 auto;
