@@ -21,12 +21,18 @@
     height: 54px;
     background: #f2f2f1;
     padding: 0rem .5rem;
-    font-size: 1rem;
+    font-size: $text-font-7;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
     color: #676767;
+    input {
+        width: 80%;
+        background: transparent;
+        color: inherit;
+        text-align: start;
+    }
 }
 
 
@@ -139,7 +145,7 @@
     .meses {
         width: 80%;
         .mes-title {
-            font-size: 1.3rem;
+            font-size: $text-font-8;
         }
         .mes__items-container {
             text-align: center;
@@ -167,7 +173,7 @@
     }
     .mensual-total {
         &__title {
-            font-size: 1.3rem;
+            font-size: $text-font-8;
         }
         button {
             padding: 0px 20px 3px 20px;

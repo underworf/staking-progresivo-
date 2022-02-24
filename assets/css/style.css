@@ -35,6 +35,18 @@
 }
 /* ----------------------- COLORS ----------------------- */
 /* ---------------------- FONT-SIZE --------------------- */
+:root {
+  --font-size-1: 3.5rem;
+  --font-size-2: 3rem;
+  --font-size-3: 2.8rem;
+  --font-size-4: 2.5rem;
+  --font-size-5: 2rem;
+  --font-size-6: 1.5rem;
+  --font-size-7: 1rem;
+  --font-size-8: 1.3rem;
+  --font-size-9: .76rem;
+}
+
 /* --------------------- TRANSITION --------------------- */
 /* --------------------- BOX-SHADOWS -------------------- */
 /* ----------------------- BORDER ----------------------- */
@@ -107,12 +119,19 @@ section {
   height: 54px;
   background: #f2f2f1;
   padding: 0rem 0.5rem;
-  font-size: 1rem;
+  font-size: var(--font-size-7);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
   color: #676767;
+}
+.form-select input,
+.data-value input {
+  width: 80%;
+  background: transparent;
+  color: inherit;
+  text-align: start;
 }
 
 /* -------------------- COMPONENT-DAY ------------------- */
@@ -219,7 +238,7 @@ section {
   width: 80%;
 }
 .component-mensual .meses .mes-title {
-  font-size: 1.3rem;
+  font-size: var(--font-size-8);
 }
 .component-mensual .meses .mes__items-container {
   text-align: center;
@@ -243,7 +262,7 @@ section {
   color: black;
 }
 .component-mensual .mensual-total__title {
-  font-size: 1.3rem;
+  font-size: var(--font-size-8);
 }
 .component-mensual .mensual-total button {
   padding: 0px 20px 3px 20px;
@@ -257,7 +276,7 @@ section {
   border: 1px solid #ffbe1b;
   color: black;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: var(--font-size-5);
 }
 
 /* --------------------- BTN-EVULUS-YELLOW--------------------- */
@@ -510,7 +529,6 @@ section {
 /* ------------------------ MODAL ----------------------- */
 .modal-dialog {
   max-width: min-content;
-  min-width: 650px;
 }
 .modal-dialog .modal-content {
   margin: 0 auto;
@@ -521,6 +539,7 @@ section {
   -moz-border-radius: 35px;
   -ms-border-radius: 35px;
   -o-border-radius: 35px;
+  width: 650px;
   padding: 20px 0px;
 }
 .modal-dialog .modal-content .modal-header-cal,
@@ -619,10 +638,10 @@ main {
   text-align: center;
 }
 .title h1 {
-  font-size: 3rem;
+  font-size: var(--font-size-2);
 }
 .title span {
-  font-size: 1.5rem;
+  font-size: var(--font-size-5);
 }
 
 .precios {
@@ -688,7 +707,7 @@ main {
   flex-wrap: wrap;
 }
 .panel__stake input {
-  font-size: 1.5rem;
+  font-size: var(--font-size-6);
   margin: 10px;
   padding: 0px 25px 6px 25px;
   font-weight: 400;
@@ -745,7 +764,7 @@ main {
 }
 .panel__table table tbody td {
   background: #ffffff;
-  font-size: 0.7rem;
+  font-size: var(--font-size-9);
   font-weight: 500;
 }
 .panel__table table td,
@@ -769,6 +788,50 @@ main {
   color: #ffffff;
   margin-top: 20px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --font-size-1: 3rem;
+    --font-size-2: 2.5rem;
+    --font-size-3: 2.2rem;
+    --font-size-4: 2rem;
+    --font-size-5: 1.5rem;
+    --font-size-6: 1.2rem;
+    --font-size-7: 1rem;
+    --font-size-8: 1.3rem;
+    --font-size-9: .76rem;
+  }
+
+  .precios .container-btn-date {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .precios {
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 10px grey;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+  .precios .container-btn-date,
+.precios .btn-date {
+    margin: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background: #ffffff;
+    box-shadow: none;
+  }
+  .precios .btn-date {
+    border: 1px solid grey;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
